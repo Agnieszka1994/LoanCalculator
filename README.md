@@ -8,7 +8,7 @@ The calculator is able to work with different types of payment and accept comman
 - Handling of invalid parameters.
 
 ### Sample usage
-The greater-than symbol followed by a space (> ) represents the user input from the command-line.
+The greater-than symbol followed by a space (> ) represents the user input from the command-line. \
 **Example 1: calculating differentiated payments:**
 ```
 > python creditcalc.py --type=diff --principal=2000000 --periods=12 --interest=9
