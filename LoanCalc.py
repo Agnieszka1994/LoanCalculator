@@ -21,12 +21,12 @@ def validate_params(arg) -> int:
             return error_msg()
     elif args.principal is None:
         if arg.type == 'annuity' and arg.payment is not None and arg.periods is not None:
-            return 3  # the principal will be calculated
+            return 3  
         else:
             return error_msg()
     elif args.periods is None:
         if arg.type == 'annuity' and arg.payment is not None and arg.principal is not None:
-            return 4  # the principal will be calculated
+            return 4  
         else:
             return error_msg()
 
@@ -104,8 +104,6 @@ if parameter_to_count == 1:
 if parameter_to_count == 2:
     calc_annuity_payment(int(args.principal), int(args.periods), float(args.interest))
 if parameter_to_count == 3:
-    # calculate the principal
     calculate_principal(int(args.payment), int(args.periods), float(args.interest))
 if parameter_to_count == 4:
-    # if parameter == 4 - calculate how long it will take to repay the loan
     number_of_monthly_payments(int(args.principal), int(args.payment), float(args.interest))
