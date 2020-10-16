@@ -11,7 +11,7 @@ The calculator is able to work with different types of payment and accept comman
 The greater-than symbol followed by a space (> ) represents the user input from the command-line. \
 **Example 1: calculating differentiated payments:**
 ```
-> python creditcalc.py --type=diff --principal=2000000 --periods=12 --interest=9
+> python LoanCalc.py --type=diff --principal=2000000 --periods=12 --interest=9
 Month 1: payment is 181667
 Month 2: payment is 180417
 Month 3: payment is 179167
